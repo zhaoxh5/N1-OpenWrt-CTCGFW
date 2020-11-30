@@ -16,13 +16,6 @@ sed -i 's/192.168.1.1/192.168.0.5/g' ./package/base-files/files/bin/config_gener
 sed -i 's/OpenWrt/OpenWrt-N1/g' ./package/base-files/files/bin/config_generate
 
 
-# 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
-#sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/zzz-default-settings
-
-
-# 修改内核版本（版本内核默认4.19，还有4.14跟4.9内核）
-#sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=4.9/g' ./target/linux/x86/Makefile
-
 #最新的openclash
 rm -rf ./package/ctcgfw/luci-app-openclash && git clone https://github.com/vernesong/OpenClash.git package/ctcgfw/luci-app-openclash
 
