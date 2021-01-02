@@ -17,7 +17,7 @@ sed -i 's/OpenWrt/OpenWrt-N1/g' ./package/base-files/files/bin/config_generate
 
 
 #最新的openclash
-rm -rf ./package/ctcgfw/luci-app-openclash && git clone https://github.com/vernesong/OpenClash.git package/ctcgfw/luci-app-openclash
+#rm -rf ./package/ctcgfw/luci-app-openclash && git clone https://github.com/vernesong/OpenClash.git package/ctcgfw/luci-app-openclash
 
 # 删除已知的重复文件
 #rm -rf ./package/lienol/luci-app-timecontrol
